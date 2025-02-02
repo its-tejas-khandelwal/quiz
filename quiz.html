@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game - Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="page">
+      <div id="quiz-header">
+        <div id="timer">Time: <span id="time-left">20</span>s</div>
+      </div>
+      <div id="question-container">
+        <h2 id="question-text">Question will appear here</h2>
+        <div id="answer-options">
+          <button class="answer-btn" onclick="chooseAnswer(0)">Option 1</button>
+          <button class="answer-btn" onclick="chooseAnswer(1)">Option 2</button>
+          <button class="answer-btn" onclick="chooseAnswer(2)">Option 3</button>
+          <button class="answer-btn" onclick="chooseAnswer(3)">Option 4</button>
+        </div>
+      </div>
+      <button id="submit-btn" onclick="submitQuiz()" style="display: none;">Submit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
